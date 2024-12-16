@@ -11,6 +11,8 @@ int top (int arr[], int top);
 
 int isEmpty (int arr[], int top);
 
+int isFull (int arr[], int top);
+
 int main (void)
 {
     int top = -1; // for empty stack
@@ -71,6 +73,19 @@ int top (int arr[], int top)
 int isEmpty (int arr[], int top)
 {
     if (top == -1)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return 0;
+    }
+}
+
+int isFull (int arr[], int top)
+{
+    if (top == size - 1)
     {
         return 1;
     }
